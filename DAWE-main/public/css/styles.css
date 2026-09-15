@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    background-image: url('../imagenes/fondo5.png'); 
+    background-repeat: repeat; 
+    background-size: auto; 
+}
+
+  
+  .container {
+    flex: 1; 
+  }
+
+
+  .btn-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cart-quantity-input {
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .max-quantity-alert {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .max-quantity-alert.show {
+    opacity: 1;
+  }
+
+  .producto-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .producto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .producto-imagen {
+    height: 350px; 
+    width: 100%; 
+    object-fit: cover;
+}
+
+.modal-producto{
+  max-width: 800px; max-height: 50vh;
+}
+
+#product-overlay {
+  z-index: 1050;
+}
+
+.modal-producto {
+  max-width: 90vw; 
+  max-height: 90vh; 
+  overflow: hidden; 
+}
+
+.modal-producto .col-md-6.p-4 {
+  overflow-y: auto;
+  max-height: 70vh; 
+}
+
